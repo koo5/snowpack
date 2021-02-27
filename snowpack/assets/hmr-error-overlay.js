@@ -57,7 +57,7 @@ const ERROR_OVERLAY_TEMPLATE = `
           :host {
             font-family: sans-serif;
             line-height: 1.15;
-            -webkit-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 150%;
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
 
@@ -83,7 +83,7 @@ const ERROR_OVERLAY_TEMPLATE = `
             font-size: 1rem;
             font-weight: 400;
             line-height: 1.5;
-            color: #212529;
+            color: #000;
             text-align: left;
             background-color: #fff;
           }
@@ -163,7 +163,7 @@ const ERROR_OVERLAY_TEMPLATE = `
           }
 
           small {
-            font-size: 80%;
+            font-size: 100%;
           }
 
           sub,
@@ -209,7 +209,7 @@ const ERROR_OVERLAY_TEMPLATE = `
           samp {
             font-family: SFMono-Regular, Menlo, Monaco, Consolas,
               'Liberation Mono', 'Courier New', monospace;
-            font-size: 1em;
+            font-size: 2em;
           }
 
           pre {
@@ -397,16 +397,14 @@ const ERROR_OVERLAY_TEMPLATE = `
             --size-font-big: 1.25rem; /* 20px */
             --size-font-bigger: 1.5rem; /* 24px */
 
-            --color-accents-1: #808080;
-            --color-accents-2: #222222;
-            --color-accents-3: #404040;
+            --color-accents-1: #000;
+            --color-accents-2: #000;
+            --color-accents-3: #000;
 
             --font-stack-monospace: 'SFMono-Regular', Consolas,
               'Liberation Mono', Menlo, Courier, monospace;
 
             --color-ansi-selection: rgba(95, 126, 151, 0.48);
-            --color-ansi-bg: #111111;
-            --color-ansi-fg: #cccccc;
 
             --color-ansi-white: #777777;
             --color-ansi-black: #141414;
@@ -474,7 +472,7 @@ const ERROR_OVERLAY_TEMPLATE = `
             align-content: center;
             align-items: center;
             flex-direction: column;
-            padding: 10vh 15px 0;
+            padding: 1vh 15px 0;
         }
 
         @media (max-height: 812px) {
@@ -507,15 +505,7 @@ const ERROR_OVERLAY_TEMPLATE = `
             position: fixed;
             bottom: var(--size-gap-double);
             left: var(--size-gap-double);
-            max-width: 420px;
             z-index: 9000;
-        }
-
-        @media (max-width: 440px) {
-            [data-nextjs-toast] {
-            max-width: 90vw;
-            left: 5vw;
-            }
         }
 
         [data-nextjs-toast-wrapper] {
@@ -542,31 +532,6 @@ const ERROR_OVERLAY_TEMPLATE = `
             rgba(0, 0, 0, 0.25);
             max-height: calc(100% - 3.5rem);
             overflow-y: hidden;
-        }
-
-        @media (max-height: 812px) {
-            [data-nextjs-dialog-overlay] {
-            max-height: calc(100% - 15px);
-            }
-        }
-
-        @media (min-width: 576px) {
-            [data-nextjs-dialog] {
-            max-width: 540px;
-            box-shadow: 0 var(--size-gap) var(--size-gap-quad) rgba(0, 0, 0, 0.25);
-            }
-        }
-
-        @media (min-width: 768px) {
-            [data-nextjs-dialog] {
-            max-width: 720px;
-            }
-        }
-
-        @media (min-width: 992px) {
-            [data-nextjs-dialog] {
-            max-width: 960px;
-            }
         }
 
         [data-nextjs-dialog-banner] {
