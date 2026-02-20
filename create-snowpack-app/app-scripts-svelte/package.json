@@ -13,10 +13,10 @@
     "directory": "create-snowpack-app/app-scripts-svelte"
   },
   "peerDependencies": {
-    "svelte": "^3.21.0"
+    "svelte": "^5.53.0"
   },
   "devDependencies": {
-    "svelte": "^3.21.0"
+    "svelte": "^5.53.0"
   },
   "dependencies": {
     "@babel/core": "^7.10.5",
