@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "rollup-plugin-svelte": "^7.0.0",
-    "svelte": "^3.18.2",
+    "svelte": "^5.53.5",
     "svelte-routing": "^1.4.0"
   },
   "devDependencies": {
